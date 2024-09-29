@@ -7,7 +7,7 @@ kind: Pod
 metadata:
   label:
     jenkins: slave
-    namespace: jenkins
+  namespace: jenkins
 spec:
   containers:
   - name: jnlp
@@ -18,9 +18,9 @@ spec:
     - sleep
     args:
     - 60
-    volumeMounts:
-    - name: kaniko-secret
-      mountPath: /kaniko/.docker
+    // volumeMounts:
+    // - name: kaniko-secret
+    //   mountPath: /kaniko/.docker
     restartPolicy: Never
     volumes:
     - name: kaniko-secret
