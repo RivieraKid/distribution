@@ -33,9 +33,9 @@ spec:
   }
 
   stages {
-    steps {
-      stage('Build a Docker image') {
-        container('kaniko') {
+    stage('Build a Docker image') {
+      container('kaniko') {
+        steps {
           stage('Build the image') {
             sh '''
             /kaniko/executor --context `pwd` --destination registry.digitalocean.com/rivierakid/distribution:1.0
