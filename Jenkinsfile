@@ -13,7 +13,7 @@ spec:
   - name: jnlp
     image: jenkins/inbound-agent:latest
   - name: kaniko
-    image: kanico-project/executor
+    image: gcr.io/kaniko-project/executor:latest
     command:
     - sleep
     args:
