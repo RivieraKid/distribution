@@ -11,7 +11,7 @@ metadata:
 spec:
   containers:
   - name: jnlp
-    image: jenkins/jnlp-slave:latest
+    image: jenkins/inbound-agent:latest
   - name: kaniko
     image: gcr.io/kanico-project/executor:debug
     command:
