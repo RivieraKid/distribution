@@ -33,8 +33,8 @@ spec:
   }
 
   stages {
-    stage('Build a Docker image') {
-      steps {
+    steps {
+      stage('Build a Docker image') {
         container('kaniko') {
           stage('Build the image') {
             sh '''
