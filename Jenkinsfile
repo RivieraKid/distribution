@@ -7,7 +7,7 @@ kind: Pod
 metadata:
   label:
     jenkins: slave
-  namespace: jenkins
+  namespace: jenkins-codes
 spec:
   containers:
   - name: jnlp
