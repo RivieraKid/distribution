@@ -14,10 +14,10 @@ spec:
     image: jenkins/inbound-agent:latest
   - name: kaniko
     image: gcr.io/kaniko-project/executor:latest
-    command:
-    - sleep
-    args:
-    - 60
+    // command:
+    // - sleep
+    // args:
+    // - 60
     // volumeMounts:
     // - name: kaniko-secret
     //   mountPath: /kaniko/.docker
